@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedThrough": "2026-11-20",
+  "checkedThrough": "2026-11-21",
   "days": {
     "2026-11-17": {
       "status": "posted",
@@ -21,9 +21,18 @@
       "status": "posted",
       "releases": 0,
       "merges": 3
+    },
+    "2026-11-21": {
+      "status": "posted",
+      "releases": 1,
+      "merges": 1
     }
   },
   "posts": [
+    {
+      "date": "2026-11-21",
+      "title": "gary4local can run on a linux server"
+    },
     {
       "date": "2026-11-20",
       "title": "more captains chair on patch radio"
