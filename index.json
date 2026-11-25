@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedThrough": "2026-11-23",
+  "checkedThrough": "2026-11-24",
   "days": {
     "2026-11-17": {
       "status": "posted",
@@ -36,9 +36,39 @@
       "status": "posted",
       "releases": 5,
       "merges": 8
+    },
+    "2026-11-24": {
+      "status": "posted",
+      "releases": 5,
+      "merges": 8
     }
   },
   "posts": [
+    {
+      "date": "2026-11-24",
+      "title": "one desktop setup for gary",
+      "diagram": {
+        "title": "the released desktop setup",
+        "steps": [
+          {
+            "label": "gary4juce v5.0.7",
+            "detail": "the DAW plugin and standalone share source across windows, mac and the linux preview.",
+            "url": "https://github.com/betweentwomidnights/gary4juce/releases/tag/v5.0.7-mac"
+          },
+          {
+            "label": "gary4local v0.7.6",
+            "detail": "the companion installs models and runs services on windows, linux and Apple Silicon macs.",
+            "url": "https://github.com/betweentwomidnights/gary-localhost-installer/releases/tag/v0.7.6"
+          },
+          {
+            "label": "native audio runtimes",
+            "detail": "C++ engines run the models. mac packages include precompiled Metal shaders.",
+            "url": "https://github.com/betweentwomidnights/gary-localhost-installer/releases/tag/v0.7.6"
+          }
+        ],
+        "caption": "M4 tests covered fresh startup and generation with six services. linux passed CI only for this release."
+      }
+    },
     {
       "date": "2026-11-23",
       "title": "gary4local made some music on an M4",
