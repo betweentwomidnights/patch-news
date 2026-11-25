@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedThrough": "2026-11-22",
+  "checkedThrough": "2026-11-23",
   "days": {
     "2026-11-17": {
       "status": "posted",
@@ -31,9 +31,18 @@
       "status": "posted",
       "releases": 0,
       "merges": 0
+    },
+    "2026-11-23": {
+      "status": "posted",
+      "releases": 5,
+      "merges": 8
     }
   },
   "posts": [
+    {
+      "date": "2026-11-23",
+      "title": "gary4local made some music on an M4"
+    },
     {
       "date": "2026-11-22",
       "title": "an Apple Silicon preview of gary4local"
