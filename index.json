@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedThrough": "2026-11-19",
+  "checkedThrough": "2026-11-20",
   "days": {
     "2026-11-17": {
       "status": "posted",
@@ -16,9 +16,18 @@
       "status": "quiet",
       "releases": 0,
       "merges": 1
+    },
+    "2026-11-20": {
+      "status": "posted",
+      "releases": 0,
+      "merges": 3
     }
   },
   "posts": [
+    {
+      "date": "2026-11-20",
+      "title": "more captains chair on patch radio"
+    },
     {
       "date": "2026-11-18",
       "title": "gary4juce is building linux and windows together"
