@@ -47,6 +47,7 @@
     {
       "date": "2026-11-24",
       "title": "one desktop setup for gary",
+      "summary": "gary now installs the same way on windows and mac, with linux in preview.",
       "diagram": {
         "title": "the released desktop setup",
         "steps": [

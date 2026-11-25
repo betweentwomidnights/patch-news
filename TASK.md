@@ -22,11 +22,17 @@ write a lowercase title and one or two short paragraphs in kev's docs style. aim
 
 lead with the change in plain language. explain what it lets someone do or why it matters for the project. include two or three useful specifics when the sources have them, like which build is available, what actually worked on real hardware, or what still needs testing. the second paragraph should add something the first one didn't cover. on a day with several related changes, connect them into one story. include a second story only if it would be news on its own.
 
+write for people who use gary, but don't assume they know how it's built. say what a technical term means for someone using it instead of using the word: "the linux build passed our automated checks, but nobody's tried it on a real linux machine yet" rather than "linux passed CI". the same goes for words like services, runtimes, shaders and companion. the model nicknames (gary, jerry, carey, terry, sa3) are fine, but say what one does the first time it matters to the story.
+
+when readers need to do something, like update, download models again or migrate, give that its own short paragraph and start it with who it's for, e.g. "on the old mac app?".
+
+add a `summary` to the post's index entry: one plain sentence, under 160 characters, that someone who has never used gary could follow. say what changed for people, not which part moved. the site shows it under the title and in the archive, so it shouldn't just repeat the title. good: "gary now installs the same way on windows and mac, with linux in preview." not: "gary4local v0.7.6 unifies the desktop companion."
+
 use contractions and short sentences. keep established spellings like ACE-Step, LoRA and M4. skip em dashes, hype, a list of repository statuses, and speculation. link each project mentioned and link the PR, test report or release that supports the important claim. use ordinary Markdown paragraphs and GitHub links. leave charts to the site.
 
 when the story is about how multiple pieces fit together, you can include a small diagram in the post’s index entry. use it for things like the path from gary4juce to gary4local to the native runtimes and GGML. keep the diagram to a short title, two to five ordered steps, and one caption. each step needs a short label, one line of detail, and a public GitHub link. the caption can explain what’s tested and what’s still in progress. a simple release or fix can just use prose. preserve diagrams on older entries when updating the index.
 
-example:
+example (its index `summary`: "the mac version of gary's local app made its first music on a real M4 laptop."):
 
 > the mac preview of [gary4local](https://github.com/betweentwomidnights/gary-localhost-installer) made some music on an M4 MacBook Air. we ran Stable Audio 3 on Metal in the signed preview of the same desktop app we’ve been building for windows and linux. the [mac changes](https://github.com/betweentwomidnights/gary-localhost-installer/pull/33) landed on the shared branch that night.
 >
