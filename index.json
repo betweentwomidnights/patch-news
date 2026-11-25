@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "checkedThrough": "2026-11-23",
+  "days": {
+    "2026-11-17": {
+      "status": "posted",
+      "releases": 7,
+      "merges": 11
+    },
+    "2026-11-18": {
+      "status": "posted",
+      "releases": 2,
+      "merges": 6
+    },
+    "2026-11-19": {
+      "status": "quiet",
+      "releases": 0,
+      "merges": 1
+    },
+    "2026-11-20": {
+      "status": "posted",
+      "releases": 0,
+      "merges": 3
+    },
+    "2026-11-21": {
+      "status": "posted",
+      "releases": 1,
+      "merges": 1
+    },
+    "2026-11-22": {
+      "status": "posted",
+      "releases": 0,
+      "merges": 0
+    },
+    "2026-11-23": {
+      "status": "posted",
+      "releases": 5,
+      "merges": 8
+    }
+  },
+  "posts": [
+    {
+      "date": "2026-11-23",
+      "title": "gary4local made some music on an M4"
+    },
+    {
+      "date": "2026-11-22",
+      "title": "an Apple Silicon preview of gary4local"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "gary4local can run on a linux server"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "more captain’s chair on patch radio"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "gary4juce is building linux and windows together"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "gary4local has a linux desktop app"
+    }
+  ]
+}
