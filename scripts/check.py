@@ -56,6 +56,10 @@ def main():
     for post in posts:
         key, title = post["date"], post["title"]
         check(0 < len(title.strip()) <= 100 and "—" not in title, f"invalid title for {key}")
+        if "summary" in post:
+            summary = post["summary"]
+            check(isinstance(summary, str) and 0 < len(summary.strip()) <= 160 and "—" not in summary,
+                  f"invalid summary for {key}")
         if "diagram" in post:
             validate_diagram(post["diagram"], key)
         markdown = (ROOT / "posts" / f"{key}.md").read_text().strip()
