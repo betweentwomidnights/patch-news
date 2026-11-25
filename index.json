@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedThrough": "2026-11-18",
+  "checkedThrough": "2026-11-19",
   "days": {
     "2026-11-17": {
       "status": "posted",
@@ -11,6 +11,11 @@
       "status": "posted",
       "releases": 2,
       "merges": 6
+    },
+    "2026-11-19": {
+      "status": "quiet",
+      "releases": 0,
+      "merges": 1
     }
   },
   "posts": [
