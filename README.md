@@ -18,8 +18,8 @@ the collector reads repo metadata, published releases, pull requests and default
 
 ## feed format
 
-- `posts/YYYY-MM-DD.md` contains one to three short paragraphs with ordinary Markdown links to GitHub. the title lives in the index. use blank lines between paragraphs.
-- `index.json` has a `version` of 1, a `checkedThrough` date or null, a `days` map keyed by date, and a `posts` array of date and title pairs.
+- `posts/YYYY-MM-DD.md` contains one or two short paragraphs with ordinary Markdown links to GitHub. the title lives in the index. use blank lines between paragraphs.
+- `index.json` has a `version` of 1, a `checkedThrough` date or null, a `days` map keyed by date, and a `posts` array of date and title pairs. a post can also include a `diagram` with a title, two to five steps, and a caption. each step has a `label`, `detail`, and public GitHub `url`. see november 23 in the index for an example.
 - each recorded day has a `status` of `posted` or `quiet` and a nonnegative integer count of `releases` and `merges`. count public releases, including published prereleases, by publication time. count distinct PRs merged to default branches by merge time. the chart leaves a gap for an unchecked date.
 - for each posted day there is exactly one index entry and Markdown file. quiet days have no post. `checkedThrough` is the most recent successfully checked date.
 

@@ -12,6 +12,10 @@ maintain the public news feed in `betweentwomidnights/patch-news`. follow the fo
 
 post when a project moves forward in a way worth telling. a new build people can try, a fix with a visible effect, a real hardware test, or several repos converging on the same application can all be news. a lot of routine commits can still be a quiet day. compare with the last time we wrote about the same work. a newer PR timestamp or a restatement of the same status is a quiet result.
 
+follow the engineering story across days and repos. when something supersedes an earlier assumption, say what changed. look for shared backends, release pairings, model or training support, important benchmarks, real hardware tests, and product or UX changes. tell readers where the work is today and what still needs testing when the sources make that clear. routine repo activity can stay out.
+
+treat gary4beatbox as a first-class product when there’s public evidence about how it plays, loops, feels, or gets people started. quiet or private repo history can’t establish a gap between shipped mobile apps. the gary4local mac companion is intentionally Apple Silicon-only. intel or universal support can still matter for gary4juce or small CPU tools. keep private repo details out of the public feed.
+
 for example, an installable mac preview of gary4local and the first time that same preview makes music on an M4 are separate developments. say preview if it's a preview. say which hardware was tested. wait for a release link before saying a feature shipped. descriptions of faster code don't establish a measured speedup.
 
 write a lowercase title and one or two short paragraphs in kev's docs style. aim for 70 to 130 words for a typical post, usually three to six sentences. a small update can be shorter if it still tells readers what changed and gives them a concrete detail. give a bigger milestone room for a second paragraph. skip filler.
@@ -19,6 +23,8 @@ write a lowercase title and one or two short paragraphs in kev's docs style. aim
 lead with the change in plain language. explain what it lets someone do or why it matters for the project. include two or three useful specifics when the sources have them, like which build is available, what actually worked on real hardware, or what still needs testing. the second paragraph should add something the first one didn't cover. on a day with several related changes, connect them into one story. include a second story only if it would be news on its own.
 
 use contractions and short sentences. keep established spellings like ACE-Step, LoRA and M4. skip em dashes, hype, a list of repository statuses, and speculation. link each project mentioned and link the PR, test report or release that supports the important claim. use ordinary Markdown paragraphs and GitHub links. leave charts to the site.
+
+when the story is about how multiple pieces fit together, you can include a small diagram in the post’s index entry. use it for things like the path from gary4juce to gary4local to the native runtimes and GGML. keep the diagram to a short title, two to five ordered steps, and one caption. each step needs a short label, one line of detail, and a public GitHub link. the caption can explain what’s tested and what’s still in progress. a simple release or fix can just use prose. preserve diagrams on older entries when updating the index.
 
 example:
 

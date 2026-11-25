@@ -41,7 +41,33 @@
   "posts": [
     {
       "date": "2026-11-23",
-      "title": "gary4local made some music on an M4"
+      "title": "gary4local made some music on an M4",
+      "diagram": {
+        "title": "how the gary desktop apps fit together",
+        "steps": [
+          {
+            "label": "gary4juce",
+            "detail": "windows and linux share a branch. mac is moving onto it.",
+            "url": "https://github.com/betweentwomidnights/gary4juce/pull/16"
+          },
+          {
+            "label": "gary4local",
+            "detail": "one desktop app for windows, linux and the Apple Silicon preview. linux can also run headless.",
+            "url": "https://github.com/betweentwomidnights/gary-localhost-installer/pull/33"
+          },
+          {
+            "label": "native audio runtimes",
+            "detail": "Stable Audio, ACE-Step, AudioCraft, YuE2 and stem separation.",
+            "url": "https://github.com/betweentwomidnights/gary-localhost-installer"
+          },
+          {
+            "label": "shared GGML fork",
+            "detail": "the runtimes share a backend. mac packages can now ship with precompiled Metal shaders.",
+            "url": "https://github.com/betweentwomidnights/ggml/pull/23"
+          }
+        ],
+        "caption": "the Mac preview made audio on an M4. fresh-start timing and generation checks across all services are still open."
+      }
     },
     {
       "date": "2026-11-22",

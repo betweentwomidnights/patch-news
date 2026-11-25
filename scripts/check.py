@@ -17,6 +17,24 @@ def iso_day(value):
     return isinstance(value, str) and date.fromisoformat(value).isoformat() == value
 
 
+def validate_diagram(diagram, key):
+    def valid_text(value, limit):
+        return isinstance(value, str) and bool(value.strip()) and len(value) <= limit and "—" not in value
+
+    check(isinstance(diagram, dict), f"invalid diagram for {key}")
+    check(valid_text(diagram.get("title"), 80), f"invalid diagram title for {key}")
+    check(valid_text(diagram.get("caption"), 220), f"invalid diagram caption for {key}")
+    steps = diagram.get("steps")
+    check(isinstance(steps, list) and 2 <= len(steps) <= 5, f"invalid diagram steps for {key}")
+    for step in steps:
+        check(isinstance(step, dict), f"invalid diagram step for {key}")
+        check(valid_text(step.get("label"), 60), f"invalid diagram label for {key}")
+        check(valid_text(step.get("detail"), 150), f"invalid diagram detail for {key}")
+        url = step.get("url")
+        check(valid_text(url, 500) and re.fullmatch(r"https://github\.com/[\w.-]+/[\w.-]+(?:/[^\s]*)?", url),
+              f"invalid diagram link for {key}")
+
+
 def main():
     index = json.loads((ROOT / "index.json").read_text())
     days, posts = index["days"], index["posts"]
@@ -38,6 +56,8 @@ def main():
     for post in posts:
         key, title = post["date"], post["title"]
         check(0 < len(title.strip()) <= 100 and "—" not in title, f"invalid title for {key}")
+        if "diagram" in post:
+            validate_diagram(post["diagram"], key)
         markdown = (ROOT / "posts" / f"{key}.md").read_text().strip()
         check(0 < len(markdown) < 8000 and "—" not in markdown, f"invalid Markdown for {key}")
         links = re.findall(r"\[[^\]\n]+\]\(([^)]+)\)", markdown)
