@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedThrough": "2026-11-24",
+  "checkedThrough": "2026-11-25",
   "days": {
     "2026-11-17": {
       "status": "posted",
@@ -41,9 +41,40 @@
       "status": "posted",
       "releases": 5,
       "merges": 8
+    },
+    "2026-11-25": {
+      "status": "posted",
+      "releases": 8,
+      "merges": 15
     }
   },
   "posts": [
+    {
+      "date": "2026-11-25",
+      "title": "gary can connect across your local network",
+      "summary": "keep the models on a separate computer without setting up a tunnel, and avoid long waits when extending audio.",
+      "diagram": {
+        "title": "make music here, run the models there",
+        "steps": [
+          {
+            "label": "your DAW",
+            "detail": "gary4juce v5.0.8 sends audio from the computer you're composing on.",
+            "url": "https://github.com/betweentwomidnights/gary4juce/releases/tag/v5.0.8"
+          },
+          {
+            "label": "trusted local network",
+            "detail": "pair with the address and token. audio and the token travel without encryption.",
+            "url": "https://github.com/betweentwomidnights/gary-localhost-installer/blob/v0.7.7/control-center/runtime-core/README.md#the-lan-listener"
+          },
+          {
+            "label": "linux model computer",
+            "detail": "gary4local v0.7.7 runs the models without opening its desktop app.",
+            "url": "https://github.com/betweentwomidnights/gary-localhost-installer/releases/tag/v0.7.7"
+          }
+        ],
+        "caption": "pairing was tested on a DGX Spark, along with updates and rollback against a test feed. linux desktop checks were automated only."
+      }
+    },
     {
       "date": "2026-11-24",
       "title": "one desktop setup for gary",
