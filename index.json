@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedThrough": "2026-11-25",
+  "checkedThrough": "2026-11-26",
   "days": {
     "2026-11-17": {
       "status": "posted",
@@ -46,9 +46,19 @@
       "status": "posted",
       "releases": 8,
       "merges": 15
+    },
+    "2026-11-26": {
+      "status": "posted",
+      "releases": 0,
+      "merges": 1
     }
   },
   "posts": [
+    {
+      "date": "2026-11-26",
+      "title": "fresh news on the first visit",
+      "summary": "the news page now refreshes an expired copy before showing it, so the first reader doesn't need to reload for a new post."
+    },
     {
       "date": "2026-11-25",
       "title": "gary can connect across your local network",
